@@ -36,7 +36,7 @@
     return YES;
 }
 
--(NSString *)stringForObjectValue:(id)obj
+-(nullable NSString *)stringForObjectValue:(nullable id)obj
 {
     return (NSString *)obj;
 }

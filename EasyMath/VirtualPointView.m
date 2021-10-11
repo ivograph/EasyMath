@@ -12,21 +12,6 @@
 @end
 
 @implementation VirtualPointView
-//-(instancetype)initWithFrame:(NSRect)frameRect{
-//    self = [super initWithFrame:frameRect];
-//
-//    self.circleFill = [NSColor redColor];
-//
-//    return self;
-//}
-//
-//-(instancetype)init{
-//    self = [super init];
-//
-//    self.circleFill = [NSColor redColor];
-//
-//    return self;
-//}
 
 -(void)awakeFromNib{
     self.circleFill = [NSColor  windowBackgroundColor];
@@ -64,7 +49,6 @@
     [fill setFill];
 
     // Create our circle path
- //   NSRect rect = NSMakeRect(10, 10, 10, 10);
     NSBezierPath* circlePath = [NSBezierPath bezierPath];
     [circlePath appendBezierPathWithOvalInRect: rect];
 
