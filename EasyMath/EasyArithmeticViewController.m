@@ -17,14 +17,13 @@
 @property (weak) IBOutlet NSTextField *lblOperation;
 @property (weak) IBOutlet NSTextField *lblRHS;
 @property (weak) IBOutlet NSTextField *lblResult;
-//@property (weak) IBOutlet NSTextField *lblTaskSucceeded;
-//@property (weak) IBOutlet NSTextField *lblTaskFailed;
-//
-//@property (weak) IBOutlet NSProgressIndicator *taskProgres;
+@property (weak) IBOutlet NSTextField *lblTaskSucceeded;
+@property (weak) IBOutlet NSTextField *lblTaskFailed;
+
+@property (weak) IBOutlet NSProgressIndicator *taskProgres;
 @property (weak) IBOutlet VirtualPointView *virtPtTen;
 @property (weak) IBOutlet VirtualPointView *virtPtHundred;
 
-@property (weak) IBOutlet NSView *TaskStatusView;
 
 @property (assign) int taskSucceeded;
 @property (assign) int taskTotal;
@@ -53,8 +52,8 @@
     //[self.lblResult setBaseWritingDirection:NSWritingDirectionRightToLeft];
     self.lblResult.baseWritingDirection = NSWritingDirectionRightToLeft;
 
-//    [self.taskProgres setMinValue:0];
-//    [self.taskProgres setMaxValue:300];
+    [self.taskProgres setMinValue:0];
+    [self.taskProgres setMaxValue:300];
 //    [self.taskProgres set:60];
 
     [NSTimer scheduledTimerWithTimeInterval:1.0
@@ -62,8 +61,6 @@
              selector:@selector(taskTimeIncrement)
              userInfo:nil
              repeats:YES];
-    
-    [self.TaskStatusView.nextResponder.];
 }
 
 
@@ -138,7 +135,7 @@
 
 -(void) createNewTask{
 
-    //[self.taskProgres setDoubleValue:0];
+    [self.taskProgres setDoubleValue:0];
 
     int lhs = arc4random_uniform(99);
     int rhs = arc4random_uniform(100-lhs);
@@ -160,8 +157,8 @@
     [self.lblRHS  setStringValue:[NSString stringWithFormat:@"%d", rhs]];
     [self.lblResult  setStringValue:@""];
 
-//    [self.lblTaskSucceeded setIntValue:self.taskSucceeded];
-//    [self.lblTaskFailed setIntValue:(self.taskTotal - self.taskSucceeded)];
+    [self.lblTaskSucceeded setIntValue:self.taskSucceeded];
+    [self.lblTaskFailed setIntValue:(self.taskTotal - self.taskSucceeded)];
     
     [self.virtPtTen reset];
     [self.virtPtHundred reset];
@@ -175,11 +172,11 @@
 -(void)taskTimeIncrement{
     if(!self.timerSuspend)
     {
-//        if([self.taskProgres doubleValue]>=[self.taskProgres maxValue])
+        if([self.taskProgres doubleValue]>=[self.taskProgres maxValue])
         {
             [self createNewTask];
         }
-//        [self.taskProgres incrementBy:1];
+        [self.taskProgres incrementBy:1];
     }
 }
 @end

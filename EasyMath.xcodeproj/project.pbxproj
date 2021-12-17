@@ -17,7 +17,6 @@
 		096251612712393D009AE029 /* OnlyIntegerValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 096251602712393D009AE029 /* OnlyIntegerValueFormatter.m */; };
 		096251662712461E009AE029 /* VirtualPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 096251652712461E009AE029 /* VirtualPointView.m */; };
 		0962516A27139816009AE029 /* NSNumberField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962516927139816009AE029 /* NSNumberField.m */; };
-		0962516F27145B8E009AE029 /* ArithmeticTaskStatusViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962516E27145B8E009AE029 /* ArithmeticTaskStatusViewControler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,8 +40,6 @@
 		096251652712461E009AE029 /* VirtualPointView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VirtualPointView.m; sourceTree = "<group>"; };
 		0962516827139815009AE029 /* NSNumberField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSNumberField.h; sourceTree = "<group>"; };
 		0962516927139816009AE029 /* NSNumberField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSNumberField.m; sourceTree = "<group>"; };
-		0962516D27145B8E009AE029 /* ArithmeticTaskStatusViewControler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArithmeticTaskStatusViewControler.h; sourceTree = "<group>"; };
-		0962516E27145B8E009AE029 /* ArithmeticTaskStatusViewControler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArithmeticTaskStatusViewControler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +82,6 @@
 				0962514427122FC2009AE029 /* ViewController.m */,
 				0962514627122FC4009AE029 /* Assets.xcassets */,
 				0962514827122FC4009AE029 /* Main.storyboard */,
-				0962516D27145B8E009AE029 /* ArithmeticTaskStatusViewControler.h */,
-				0962516E27145B8E009AE029 /* ArithmeticTaskStatusViewControler.m */,
 				0962514B27122FC4009AE029 /* Info.plist */,
 				0962514C27122FC4009AE029 /* main.m */,
 				0962514E27122FC4009AE029 /* EasyMath.entitlements */,
@@ -172,7 +167,6 @@
 				0962515727123823009AE029 /* EasyArithmeticViewController.m in Sources */,
 				096251612712393D009AE029 /* OnlyIntegerValueFormatter.m in Sources */,
 				0962515C27123839009AE029 /* AdvanceArithmeticViewController.m in Sources */,
-				0962516F27145B8E009AE029 /* ArithmeticTaskStatusViewControler.m in Sources */,
 				0962514527122FC2009AE029 /* ViewController.m in Sources */,
 				0962514D27122FC4009AE029 /* main.m in Sources */,
 				0962514227122FC2009AE029 /* AppDelegate.m in Sources */,

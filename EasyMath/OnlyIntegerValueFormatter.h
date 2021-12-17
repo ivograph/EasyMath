@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface OnlyIntegerValueFormatter : NSFormatter//NSNumberFormatter
 - (BOOL)isPartialStringValid:(NSString*)partialString newEditingString:(NSString*_Nullable*_Nullable)newString errorDescription:(NSString*_Nullable*_Nullable)error;
 
--(nullable NSString *)stringForObjectValue:(nullable id)obj;
+-(NSString *)stringForObjectValue:(id)obj;
 -(BOOL)getObjectValue:(out id  _Nullable __autoreleasing *_Nullable)obj forString:(NSString *)string errorDescription:(out NSString * _Nullable __autoreleasing *_Nullable)error;
 @end
 
